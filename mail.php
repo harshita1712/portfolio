@@ -7,11 +7,11 @@ $message= $_POST['message'];
 $to = "harshitamathur17121@gmail.com";
 $subject = "Mail From portfolio website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-// $headers = "From: noreply@yoursite.com" . "\r\n" .
-// "CC: somebodyelse@example.com";
-// if($email!=NULL){
-//     mail($to,$subject,$txt,$headers);
-// }
+$headers = "From: noreply@harshita.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
 //redirect
 header("Location:thankyou.html");
 ?>
